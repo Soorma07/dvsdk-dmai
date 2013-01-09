@@ -1,0 +1,2 @@
+#!/bin/sh
+swish-e -w "$1" | cut -d ' ' -f 2 | egrep -v '^\.' | tail --lines=+7 | sort
